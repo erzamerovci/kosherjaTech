@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product</title>
+    <link rel="stylesheet" href="./products.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"></div>
+      <div class="product">
+        <div class="product_photo">
+          <!-- Shtoni këtë div për thumbnail-ët nën foton kryesore -->
+          <div class="thumbnails_container">
+            <div class="thumbnail" id="thumbnail1"></div>
+            <div class="thumbnail" id="thumbnail2"></div>
+            <div class="thumbnail" id="thumbnail3"></div>
+          </div>
+        </div>
+        <div class="product_desc">
+            <h2 id="productName"></h2>
+            <p id="productPrice"></p>
+            <div id="productRating"></div>
+            <p id="productDescription"></p>
+            <label for="quantity">Quantity:</label>
+            <div class="quantity-control">
+              <button onclick="decreaseQuantity()">-</button>
+              <input type="number" id="quantity" name="quantity" value="1" readonly>
+              <button onclick="increaseQuantity()">+</button>
+            </div>
+            <br>
+            <label for="color">Choose a color:</label>
+            <div class="color-options">
+              <div class="color-option" id="black" onclick="selectColor('black')"></div>
+              <div class="color-option" id="green" onclick="selectColor('green')"></div>
+              <div class="color-option" id="blue" onclick="selectColor('blue')"></div>
+            </div>
+            <br>
+            <button class="button" onclick="addToCart()">Add to Cart</button>
+          </div>
+        </div>
+  
+      </div>
+      <div class="modal" id="myModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="x">
+      </div>
+    </div>
+    <script src="./products.js"></script>
+  </body>
+</html>
