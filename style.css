@@ -141,6 +141,95 @@
   color: #737373;
   opacity: 1;
 }
+/* .blog_title {
+    text-align: left;
+    font: normal normal bold 33px/41px Poppins;
+    letter-spacing: 0px;
+    color: #3d3d3d;
+    opacity: 1;
+    padding: 30px 100px;
+    background-color: #fbfbfb;
+
+  } */
+
+.blog {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 100px;
+  background-color: #fbfbfb;
+  height: 500px;
+}
+
+.blog_card {
+  width: 23%;
+
+  height: auto;
+  background-color: white;
+}
+
+.blog_card img {
+  width: 95%;
+  margin: 5px;
+}
+
+.blog_card h3 {
+  text-align: left;
+  font: normal normal 900 20px/24px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  margin: 5px;
+  padding-bottom: 10px;
+}
+
+.blog_card h6 {
+  margin: 5px;
+  text-align: left;
+  font: normal normal 600 12px/20px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #00000091;
+  opacity: 1;
+}
+.blog_card_person {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  margin: 5px auto;
+  
+}
+.blog_card_person_photo {
+  width: 40px;
+  height: 40px;
+  background-color: #cbcbcb;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.blog_card_person_name {
+  text-align: left;
+  font: normal normal bold 13px/18px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.blog_card_person_profession {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    background-color: #fbfbfb;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
 
 @media screen and (max-width: 600px) {
   .about_section {
