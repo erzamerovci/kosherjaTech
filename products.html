@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product</title>
     <link rel="stylesheet" href="./products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+    href="https://fonts.googleapis.com/css?family=Mulish"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css?family=Source Sans Pro"
+    rel="stylesheet"
+  />
+  <link
+  href="https://fonts.googleapis.com/css?family=Poppins"
+  rel="stylesheet"
+/>
   </head>
   <body>
     <div class="container">
-      <div class="header"></div>
+      <div class="header_nav">
+        <div class="header_nav_logo">
+          <h1>kosherja</h1>
+        </div>
+        <div class="header_nav_menu">
+          <a href="./index.html">Home</a>
+          <a href="./products.html">Product</a>
+          <a href="#">Solutions</a>
+          <a href="#">About</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="header_nav_icons">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <i class="fa fa-search" aria-hidden="true"></i>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+      </div>
       <div class="product">
         <div class="product_photo">
-          <!-- Shtoni këtë div për thumbnail-ët nën foton kryesore -->
           <div class="thumbnails_container">
             <div class="thumbnail" id="thumbnail1"></div>
             <div class="thumbnail" id="thumbnail2"></div>
@@ -19,32 +50,48 @@
           </div>
         </div>
         <div class="product_desc">
-            <h2 id="productName"></h2>
-            <p id="productPrice"></p>
-            <div id="productRating"></div>
-            <p id="productDescription"></p>
-            <label for="quantity">Quantity:</label>
-            <div class="quantity-control">
-              <button onclick="decreaseQuantity()">-</button>
-              <input type="number" id="quantity" name="quantity" value="1" readonly>
-              <button onclick="increaseQuantity()">+</button>
-            </div>
-            <br>
-            <label for="color">Choose a color:</label>
-            <div class="color-options">
-              <div class="color-option" id="black" onclick="selectColor('black')"></div>
-              <div class="color-option" id="green" onclick="selectColor('green')"></div>
-              <div class="color-option" id="blue" onclick="selectColor('blue')"></div>
-            </div>
-            <br>
-            <button class="button" onclick="addToCart()">Add to Cart</button>
+          <h2 id="productName"></h2>
+          <p id="productPrice"></p>
+          <div id="productRating"></div>
+          <p id="productDescription"></p>
+          <label for="quantity">Quantity:</label>
+          <div class="quantity-control">
+            <button onclick="decreaseQuantity()">-</button>
+            <input
+              type="number"
+              id="quantity"
+              name="quantity"
+              value="1"
+              readonly
+            />
+            <button onclick="increaseQuantity()">+</button>
           </div>
+          <br />
+          <label for="color">Choose a color:</label>
+          <div class="color-options">
+            <div
+              class="color-option"
+              id="black"
+              onclick="selectColor('black')"
+            ></div>
+            <div
+              class="color-option"
+              id="green"
+              onclick="selectColor('green')"
+            ></div>
+            <div
+              class="color-option"
+              id="blue"
+              onclick="selectColor('blue')"
+            ></div>
+          </div>
+          <br />
+          <button class="button" onclick="addToCart()">Add to Cart</button>
         </div>
-  
       </div>
       <div class="modal" id="myModal">
         <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage" alt="x">
+        <img class="modal-content" id="modalImage" alt="x" />
       </div>
     </div>
     <script src="./products.js"></script>

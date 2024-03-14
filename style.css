@@ -11,7 +11,7 @@
 .header {
   /* border: 1px solid red; */
   height: 500px;
-  background-image: url("./images/header.png");
+  background-image: url("./images/beehive.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -268,6 +268,7 @@
   opacity: 1;
   margin: 10px;
   padding-bottom: 10px;
+  height: 50px;
 }
 
 .blog_card h6 {
@@ -277,6 +278,7 @@
   letter-spacing: 0px;
   color: #00000091;
   opacity: 1;
+  height: 80px;
 }
 .blog_card_person {
   display: flex;
@@ -328,6 +330,7 @@
   font: normal normal bold 33px/41px Poppins;
   letter-spacing: 0px;
   color: #3d3d3d;
+  padding-bottom: 20px;
 }
 .about_text_description {
   text-align: center;
