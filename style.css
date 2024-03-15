@@ -251,7 +251,6 @@
 
 .blog_card {
   width: 23%;
-
   height: auto;
   background-color: white;
 }
@@ -463,9 +462,7 @@
   .header_nav_menu {
     display: none;
   }
-  #header_nav_menu.show-menu {
-    display: block;
-}
+
   .header_nav_hamburger_menu {
     display: block;
   }
@@ -649,8 +646,7 @@
   .footer {
     height: auto;
     flex-direction: column;
-    justify-content:center;
-  
+    justify-content: center;
   }
   .left_footer {
     width: 100%;
@@ -667,7 +663,7 @@
     justify-content: space-between;
     padding-bottom: 20px;
   }
-  
+
   .right_footer {
     width: 100%;
     display: flex;
@@ -729,6 +725,55 @@
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .header {
+    height: auto;
+    background: none;
+  }
+  .header_nav {
+    background: none;
+  }
+  .header_nav_logo h1 {
+    color: black;
+    font: normal normal bold 20px/30px Poppins;
+  }
+  .header_nav_menu {
+    display: none;
+  }
+
+  .header_nav_hamburger_menu {
+    display: block;
+  }
+  .header_nav_hamburger_menu i {
+    color: black;
+    font: normal normal 300 16px/25px;
+  }
+  .header_nav_icons {
+    display: none;
+  }
+  .header_section {
+    width: 100%;
+    height: 300px;
+    background-image: url("./images/beehive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header_section h1 {
+    font: normal normal bold 17px/30px Poppins;
+    padding-bottom: 5px;
+  }
+  .header_section p {
+    font: normal normal normal 10px/12px Poppins;
+    width: 70%;
+  }
+  .header_section_buttons button {
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    height: 30px;
+  }
   .about_section {
     padding: 0;
     flex-direction: column;
@@ -761,9 +806,220 @@
     opacity: 1;
     /* background-color: #373535; */
   }
+  .products_title {
+    font: normal normal bold 25px/41px Poppins;
+  }
+  .products_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .whyUs {
+    flex-direction: column;
+  }
+  .whyUs_title {
+    width: 100%;
+  }
+  .whyUs_title h1 {
+    font: normal normal bold 20px/30px Poppins;
+  }
+
+  .whyUs_desc_div {
+    width: 33.33%;
+  }
+  .whyUs_desc_div i {
+    font-size: 12px;
+  }
+  .blog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    padding: 0 100px;
+    background-color: #fbfbfb;
+    height: auto;
+  }
+
+  .blog_card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .blog_card img {
+    width: 92%;
+    margin: 10px;
+  }
+
+  .blog_card h3 {
+    text-align: left;
+    font: normal normal 900 20px/24px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+  }
+
+  .blog_card h6 {
+    margin: 10px;
+    text-align: left;
+    font: normal normal 600 12px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #00000091;
+    opacity: 1;
+    height: 80px;
+  }
+  .blog_card_person {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    margin: 8px;
+  }
+  .blog_card_person_photo {
+    width: 40px;
+    height: 40px;
+    background-color: #cbcbcb;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .blog_card_person_name {
+    text-align: left;
+    font: normal normal bold 13px/18px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  .blog_card_person_profession {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  .about {
+    height: auto;
+  }
+  .about_text {
+    height: 300px;
+  }
+  .about_text_title {
+    text-align: center;
+    font: normal normal bold 33px/41px Poppins;
+    letter-spacing: 0px;
+    color: #3d3d3d;
+    padding: 30px 0;
+  }
+  .about_text_description {
+    font: normal normal normal 14px/27px Poppins;
+
+    width: 100%;
+  }
+  .about_photos {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    /* padding: 30px 100px; */
+  }
+  .about_photos_img {
+    width: 400px;
+    height: 300px;
+  }
+  .footer {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left_footer {
+    width: 100%;
+  }
+  .left_footer h2 {
+    text-align: center;
+  }
+  .left_footer p {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .left_footer_icons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  .right_footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right_footer_products h3 {
+    line-height: 60px;
+    text-align: center;
+    font: normal normal bold 24px/34px Noto Sans;
+    letter-spacing: 0px;
+    color: #3d3d3d;
+    opacity: 1;
+  }
+  .right_footer_products ul {
+    list-style-type: none;
+  }
+  .right_footer_products ul li {
+    padding-bottom: 12px;
+  }
+  .right_footer_products ul li:first-child {
+    padding-top: 20px;
+  }
+  .right_footer_services h3 {
+    line-height: 60px;
+    text-align: center;
+    font: normal normal bold 24px/34px Noto Sans;
+    letter-spacing: 0px;
+    color: #3d3d3d;
+    opacity: 1;
+  }
+  .right_footer_services ul {
+    list-style-type: none;
+  }
+  .right_footer_services ul li {
+    padding-bottom: 12px;
+  }
+  .right_footer_services ul li:first-child {
+    padding-top: 20px;
+  }
+  .right_footer_resources h3 {
+    line-height: 60px;
+    text-align: center;
+    font: normal normal bold 24px/34px Noto Sans;
+    letter-spacing: 0px;
+    color: #3d3d3d;
+    opacity: 1;
+  }
+  .right_footer_resources ul {
+    list-style-type: none;
+  }
+  .right_footer_resources ul li {
+    padding-bottom: 12px;
+  }
+  .right_footer_resources ul li:first-child {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
+  .header_section_buttons button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 150px;
+    height: 40px;
+    border: none;
+    margin-right: 20px;
+  }
+
   .about_section {
     padding: 10px 60px;
   }
@@ -792,5 +1048,52 @@
     letter-spacing: 0px;
     color: #737373;
     opacity: 1;
+  }
+  .products_cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 100px;
+  }
+  .blog_card {
+    width: 23%;
+    height: auto;
+    background-color: white;
+  }
+  .blog_card h3 {
+    height: 60px;
+  }
+
+  .blog_card h6 {
+    margin: 10px;
+    text-align: left;
+    font: normal normal 600 12px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #00000091;
+    opacity: 1;
+    height: 100px;
+  }
+  .about{
+    height: auto;
+  }
+  .about_photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    /* padding-top: 30px; */
+    padding: 30px 100px;
+  }
+  .about_text {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+      align-items: center; */
+  }
+  .about_text_title {
+    padding: 30px 0;
   }
 }
